@@ -1,7 +1,6 @@
-# alexa
-Amazon Alexa Plugin for CraftBeerPi
+# Amazon Alexa Plugin for CraftBeerPi
 
-# Installation
+## Installation 
 
 Please download and install this plugin via the CraftBeerPi user interface.
 
@@ -9,17 +8,23 @@ You need to run the following command on your Raspberry Pi to install the missin
 
 <code>pip install flask-ask</code>
 
-## Flask Ask Video Tutorial
+### Flask Ask Video Tutorial
 
 Just follow this tutorial and just use the CBPi IntentSchema and Utterances
 
 https://www.youtube.com/watch?v=cXL8FDUag-s
 
-## Ngrok
+### Ngrok
 
 Install ngrok to create a secure tunnel to your local network.
 
 https://ngrok.com/
+
+### Amazon Developer Account
+
+You need Amazon Developer Account to connect the Alexa Skill to your local CraftBeerPi Server.
+
+https://developer.amazon.com
 
 ### Intent Schema
 
