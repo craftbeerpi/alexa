@@ -21,12 +21,9 @@ Install ngrok to create a secure tunnel to your local network.
 
 https://ngrok.com/
 
-###
-Intent Schema
+### Intent Schema
 
 ```
-
-
 {
   "intents": [
     {
@@ -71,9 +68,7 @@ Intent Schema
 
 ### Sample Utterances
 
-<code>
-
-
+```
 Goodbye No thanks
 Goodbye Stop
 Update for the current state
@@ -105,4 +100,4 @@ KettleIntent  what is the current temperature of kettle {Boil Kettle|K}
 ActorIntent  toggle actor {heater|Actor}
 ActorIntent  toggle actor {agiator|Actor}
 ActorIntent  toggle actor {pump|Actor}
-</code>
+```
