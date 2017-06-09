@@ -9,7 +9,9 @@ You need to run the following command on your Raspberry Pi to install the missin
 
 <code>pip install flask-ask</cod>
 
-## Flask Ask Video Tutorial. Just follow this tutorial and just use the CBPi IntentSchema and Utterances
+## Flask Ask Video Tutorial
+
+Just follow this tutorial and just use the CBPi IntentSchema and Utterances
 
 https://www.youtube.com/watch?v=cXL8FDUag-s
 
