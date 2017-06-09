@@ -7,7 +7,7 @@ Please download and install this plugin via the CraftBeerPi user interface.
 
 You need to run the following command on your Raspberry Pi to install the missing python libs
 
-<code>pip install flask-ask</cod>
+<code>pip install flask-ask</code>
 
 ## Flask Ask Video Tutorial
 
@@ -24,7 +24,9 @@ https://ngrok.com/
 ###
 Intent Schema
 
-<code>
+```
+
+
 {
   "intents": [
     {
@@ -65,7 +67,7 @@ Intent Schema
     }
   ]
 }
-</code>
+```
 
 ### Sample Utterances
 
