@@ -24,7 +24,7 @@ def update():
         text = text + 'There is no brewing process running .'
     text = text + "Now to the brewing kettles. "
 
-    for idx, value in cbpi.cache["kettle"].iteritems():
+    for idx, value in cbpi.cache["kettle"].items():
         current_sensor_value = cbpi.get_sensor_value(value.sensor)
         text = text + "%s has set target temperature to %s and a current temperature of %s. " % (value.name, value.target_temp, current_sensor_value)
 
@@ -34,9 +34,9 @@ def update():
 
 @ask.intent('SensorIntent', mapping={'sensor': 'Sensor'})
 def sensor_value(sensor):
-    print "SENSOR", sensor
-    for idx, value in cbpi.cache["sensors"].iteritems():
-        print value.__dict__
+    print("SENSOR", sensor)
+    for idx, value in cbpi.cache["sensors"].items():
+        print(value.__dict__)
         if value.name.lower() == sensor:
             v = cbpi.get_sensor_value(value.id)
             speech_text = 'The sensor temperature is %s %s' % (v, value.instance.get_unit())
@@ -47,8 +47,8 @@ def sensor_value(sensor):
 
 @ask.intent('KettleIntent', mapping={'kettle': 'K'})
 def kettle_value(kettle):
-    print "KETTLE", kettle
-    for idx, value in cbpi.cache["kettle"].iteritems():
+    print("KETTLE", kettle)
+    for idx, value in cbpi.cache["kettle"].items():
         if value.name.lower() == kettle:
             v = cbpi.get_sensor_value(value.sensor)
             s = cbpi.cache["sensors"].get(int(value.sensor))
@@ -64,7 +64,7 @@ def kettle_value(kettle):
 @ask.intent('ActorIntent', mapping={'actor': 'Actor'})
 def toggle_actor(actor):
 
-    for idx, value in cbpi.cache["actors"].iteritems():
+    for idx, value in cbpi.cache["actors"].items():
         if value.name.lower() == actor:
 
             if value.state == 1:
